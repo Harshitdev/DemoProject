@@ -1,4 +1,4 @@
-#Wed Apr 29 13:26:55 IST 2020
-base.0=/Users/harshit/Downloads/Projects/DemoProject/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+#Wed Apr 29 14:17:59 IST 2020
+base.0=/Users/harshit/Downloads/Projects/git/DemoProject/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

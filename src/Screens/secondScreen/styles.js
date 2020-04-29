@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 import { Dimensions } from "react-native";
 import Colors from '../../assets/Colors/Colors'
 const { height, width } = Dimensions.get('window');
@@ -26,6 +26,7 @@ export default StyleSheet.create({
         justifyContent: "space-between",
         flexDirection: 'row',
         alignItems: 'center',
+        marginTop: Platform.OS == "ios" ? 30 : 0,
         backgroundColor: Colors.AppBackgroundColor,
     },
     titleStyle: {

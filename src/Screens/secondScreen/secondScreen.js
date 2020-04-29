@@ -106,6 +106,7 @@ export default class Login extends React.Component {
                             <Text style={styles.text}>Name: {item.name}</Text>
                             <Text style={styles.text}>Capital: {item.capital}</Text>
                             <Text style={styles.text}>Population: {item.population}</Text>
+                            <Text style={styles.text}>Population: {item.population}</Text>
                             <View style={{ flexDirection: "row" }}>
                                 <Text>Lat & long:</Text>
                                 {item.latlng.map((element, _index) => {
@@ -133,6 +134,14 @@ export default class Login extends React.Component {
                                             <Text style={styles.text}>Temperature: {weatherData.current.temperature}</Text>
                                             <Text style={styles.text}>Wind Speed: {weatherData.current.wind_speed}</Text>
                                             <Text style={styles.text}>Precip: {weatherData.current.precip}</Text>
+                                            {weatherData.current.weather_icons.map((element, _index) => {
+                                                return (
+                                                    <View key={_index} style={{ marginLeft: 5, flexDirection: "row", width: "100%", }}>
+                                                        <Image source={{ uri: element }} style={{ width: 30, height: 30 }} resizeMode={"contain"} />
+                                                    </View>
+                                                );
+                                            })
+                                            }
                                         </View>
                                         : null
                                     }
